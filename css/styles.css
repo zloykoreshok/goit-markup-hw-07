@@ -57,15 +57,6 @@ h1,h2,h3,h4,h5,h6,p{
   /* outline: 2px solid tomato; */
 }
 
-.portfolio-container{
-  width: 1200px;
-   
-  margin-left: auto;
-  margin-right: auto;
-  /* outline: 2px solid tomato; */  
-}
-
-
 .section-title{
   font-weight: 700;
   font-size: 36px;
@@ -1023,7 +1014,6 @@ margin-left: 12px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-
 .footer__input{
   font-family: 'Roboto', 'Sans-Serif';
   font-size: 14px;
@@ -1067,15 +1057,25 @@ margin-left: 12px;
   margin-left: 10px;
 }
 
+
 /* portfolio.html page */
 
-.portfolio-section{
+
+.portfolio{
   padding-top: 94px;
   padding-bottom: 94px;      
   /* outline: 2px solid tomato; */
 }
 
-.filter-btn-list{
+.portfolio__container{
+  width: 1200px;
+   
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 2px solid tomato; */  
+}
+
+.portfolio__btn-list{
   text-decoration: none;
   justify-content: center;
   display: flex;    
@@ -1088,7 +1088,7 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */
 }
 
-.filter-btn-container{
+.portfolio__item{
   align-items: center;
   margin-right: 8px;
 
@@ -1099,7 +1099,7 @@ margin-left: 12px;
   margin-right: 0;
 }
 
-.filter-btn{
+.portfolio__btn{
   font-family: 'Roboto', 'Sans-Serif';
   font-weight: 500;
   font-size: 16px;
@@ -1120,7 +1120,7 @@ margin-left: 12px;
   background-color: var(--team-n-buttons-color);
 }
 
-.sum-filter-btn{
+.portfolio__sum-btn{
   font-family: 'Roboto', 'Sans-Serif';
   font-weight: 500;
   font-size: 16px;
@@ -1136,16 +1136,20 @@ margin-left: 12px;
   background-color: var(--accent-color);
 }
 
-.sum-filter-btn:hover,
-.sum-filter-btn:focus,
-.filter-btn:hover,
-.filter-btn:focus{
+.portfolio__sum-btn:hover,
+.portfolio__sum-btn:focus,
+.portfolio__btn:hover,
+.portfolio__btn:focus{
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: var(--accent-color);
   color: var(--background-color);
 } 
 
-.our-work{
+
+/* Проекты */
+
+
+.projects{
   margin: -15px;
   display: flex;
   margin-left: auto;
@@ -1155,7 +1159,7 @@ margin-left: 12px;
   align-items: center;
 }
 
-.our-work-item{
+.projects__item{
   margin-top: 30px;
   margin: 15px;
   display: block;
@@ -1163,7 +1167,7 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */
 }
 
-.our-work-img{
+.projects__link{
   display: block;
   max-width: 370px;
   list-style: none;
@@ -1177,20 +1181,20 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */
 }
 
-.our-work-img:hover,
-.our-work-img:focus,
-.our-work-item:hover,
-.our-work-item:focus{
+.projects__link:hover,
+.projects__link:focus,
+.projects__item:hover,
+.projects__item:focus{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.our-work-overlay{
+.projects__overlay{
   position: relative;
   overflow: hidden;
   /* outline: 2px solid tomato; */
 }
 
-.card-overlay-description{
+.projects__overlay-text{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1209,7 +1213,7 @@ margin-left: 12px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-work-overlay::before{
+.projects__overlay::before{
   position: absolute;
   display: block;
   content: "";
@@ -1223,20 +1227,20 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */
 }
 
-.our-work-img:focus .card-overlay-description,
-.our-work-item:hover .card-overlay-description{
+.projects__link:focus .projects__overlay-text,
+.projects__item:hover .projects__overlay-text{
   opacity: 1; 
   transform: translate(-50%, -50%);    
   } 
 
-.our-work-item:hover .our-work-overlay::before,
-.our-work-img:focus .our-work-overlay::before{
+.projects__item:hover .projects__overlay::before,
+.projects__link:focus .projects__overlay::before{
   opacity: 1;
   transform: translateY(0);
 }
 
 
-.our-work-card{
+.projects__card{
   padding: 20px 24px;
   border-left: var(--border-color) solid 1px;
   border-right: var(--border-color ) solid 1px;
@@ -1244,7 +1248,7 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */
 }
 
-.our-work-customer{
+.projects__customer{
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1253,7 +1257,7 @@ margin-left: 12px;
   color: var(--title-text-color);
 }
 
-.our-work-description{
+.projects__description{
   font-size: 16px;
   line-height: 1.85;
   letter-spacing: 0.03em;
