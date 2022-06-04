@@ -91,7 +91,7 @@ h1,h2,h3,h4,h5,h6,p{
   margin-top: 0;
 }
 
-.logo{
+.header-logo{
   font-family: 'Raleway', 'Sans-Serif';
   font-weight: 700;
   font-size: 26px;
@@ -108,7 +108,7 @@ h1,h2,h3,h4,h5,h6,p{
   /* outline: 2px solid tomato; */
 }
 
-.logo-header{
+.header-logo__color{
   color: var(--title-text-color);
 }
 
@@ -488,6 +488,9 @@ fill: var(--accent-color);
   /* outline: 2px solid tomato; */
 }
 
+
+
+
 .modal-btn-icon{
   position: relative;
   fill: #000000;
@@ -501,10 +504,7 @@ fill: var(--accent-color);
 .modal-btn:hover  .modal-btn-icon,
 .modal-btn:focus .modal-btn-icon{
   fill: var(--accent-color);
-  
 }
-
-
 
 .modal-wrapper__agreement{  
   position: relative;
@@ -522,10 +522,6 @@ fill: var(--accent-color);
 .checkbox{
 position: absolute;
 margin-left: 12px;
-
-  /* opacity: 0; */
-  /* visibility: hidden; */
-
 }
 
 .visually-hidden {
@@ -729,20 +725,20 @@ margin-left: 12px;
   color: var(--background-color);
 }
 
+/* Наша команда */
 
-
-.our-team-section{ 
+.team-section{ 
   background-color: var(--team-n-buttons-color);
   /* outline: 2px solid tomato; */
 }
 
-.our-team-list{
+.team__list{
   text-align: center;
   display: flex;
   padding-left: 0;
 }
 
-.teammate{
+.team__block{
   background-color: var(--background-color);
   margin-right: 30px;
   
@@ -750,21 +746,21 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */
 }
 
-.teammate:last-child{
+.team__block:last-child{
   margin: 0;
 }
 
-.team-division{
+.team-photo{
   max-width: 100%;
   /* outline: 2px solid tomato; */
 }
 
-.teammate-section{
+.team__card{
   padding: 30px 32px;
   /* outline: 2px solid tomato; */
 }
 
-.our-team-name{
+.team__name{
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -776,7 +772,7 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */
 }
 
-.our-team-position{
+.team__position{
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -786,7 +782,7 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */
 }
 
-.socials-list{
+.team__socials-list{
   list-style: none;
   display: flex;
   justify-content: center;
@@ -794,11 +790,11 @@ margin-left: 12px;
   padding-left: 0; 
 }
 
-.socials-item:not(:last-child){
+.team__socials-item:not(:last-child){
   margin-right: 10px;
 }
 
-.socials-link{
+.team__socials-link{
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -814,33 +810,36 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */
 }
 
-.socials-link:hover,
-.socials-link:focus{
+.team__socials-link:hover,
+.team__socials-link:focus{
   background-color: var(--accent-color);
 }
 
-.socials-icon{
+.team__socials-icon{
   fill: var(--icon-color);
 }
 
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon{
+.team__socials-link:hover .team__socials-icon,
+.team__socials-link:focus .team__socials-icon{
   fill: var(--background-color);
 }
 
-.customer{
+
+/* Клиенты */
+
+.customers__item{
   margin-right: 30px;
 }
 
-.customer:last-child{
+.customers__item:last-child{
   margin-right: 0;
 }
 
-.customers-list{
+.customers__list{
   display: flex;
 }
 
-.customer-link{
+.customers__link{
    width: 170px;
    height: 92px;
 
@@ -863,11 +862,14 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */
 }
 
-.customer-link:hover,
-.customer-link:focus{
+.customers__link:hover,
+.customers__link:focus{
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
+
+/* Подвал */
+
 
 .footer{
   padding-top:60px;
@@ -877,7 +879,17 @@ margin-left: 12px;
  /* outline: 2px solid tomato; */
 }
 
-.footer-logo{
+.footer__info-container{
+  display: flex;
+  align-items: baseline;
+  /* outline: 2px solid tomato; */
+}
+
+.footer__adress-group{
+  margin-right: 70px;
+}
+
+.footer__logo{
   font-family: 'Raleway', 'Sans-Serif';
   font-weight: 700;
   font-size: 26px;
@@ -890,11 +902,11 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */
 }
 
-.logo-footer{
+.footer__logo-color{
   color: var(--background-color);
 }
 
-.footer-list{
+.footer__list{
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -906,7 +918,7 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */  
 }
 
-.adress{
+.footer__adress{
   font-style: normal;
   line-height: 24px;
 
@@ -914,12 +926,12 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */
 }
 
-.adress-list{
+.footer__adress-item{
   margin-top: 9px;
   /* outline: 2px solid tomato; */
 }
 
-.footer-link{
+.footer__link{
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -930,24 +942,22 @@ margin-left: 12px;
   color:var(--footer-links-color); 
 }
 
-.footer-info-container{
-  display: flex;
-  align-items: baseline;
-  /* outline: 2px solid tomato; */
+.nav__link:hover,
+.nav__link:focus,
+.footer__link:hover, 
+.footer__link:focus{
+  color: var(--accent-color);
 }
 
-.footer-adress{
-  margin-right: 70px;
-}
 
-/* footer inviatation */
+/* Подвал-соцсети */
 
-.footer-invitation{
+.footer-invite-container{
   margin: 0;
  /* outline: 2px solid tomato; */
 }
 
-.invitation-row{
+.footer__heading{
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
@@ -956,7 +966,7 @@ margin-left: 12px;
   color: var(--background-color);
 }
 
-.footer-socials{
+.footer-socials__list{
   list-style: none;
   display: flex;
   justify-content: center;
@@ -965,11 +975,11 @@ margin-left: 12px;
   margin: 0;
 }
 
-.footer-socials-item:not(:last-child){
+.footer-socials__item:not(:last-child){
   margin-right: 10px;
 }
 
-.footer-socials-link{
+.footer-socials__link{
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -986,26 +996,19 @@ margin-left: 12px;
   transition-timing-function: var(--transition-timing-function);
 }
 
-.footer-socials-icon{
- fill: var(--background-color);
-}
-
-.footer-socials-link:hover,
-.footer-socials-link:focus{
+.footer-socials__link:hover,
+.footer-socials__link:focus{
   background-color: var(--accent-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.navigation-link:hover,
-.navigation-link:focus,
-.footer-link:hover, 
-.footer-link:focus{
-  color: var(--accent-color);
+.footer-socials__icon{
+ fill: var(--background-color);
 }
 
-/* footer send-message division */
+/* Подвал-сообщение */
 
-.footer-call{
+.footer__msg-container{
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -1013,7 +1016,7 @@ margin-left: 12px;
   /* outline: 2px solid tomato; */
 }
 
-.footer-send-form{
+.footer__msg-form{
   display: flex;
   align-items: baseline;
 
@@ -1021,7 +1024,7 @@ margin-left: 12px;
 }
 
 
-.footer-form-input{
+.footer__input{
   font-family: 'Roboto', 'Sans-Serif';
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -1037,7 +1040,7 @@ margin-left: 12px;
   border-radius: 4px; 
 }
 
-.footer-btn{
+.footer__btn{
   font-family: 'Roboto', 'Sans-Serif';
   font-weight: 500;
   font-size: 16px;
