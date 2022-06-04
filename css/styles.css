@@ -136,17 +136,13 @@ h1,h2,h3,h4,h5,h6,p{
   /* outline: 2px solid tomato; */
 }
 
-.active-nav__link{
+.nav__link--active{
   position: relative;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   
-  color: var(--accent-color);
-  /* outline: 2px solid tomato; */  
+  color: var(--accent-color); 
 }
 
-.active-nav__link::after{
+.nav__link--active::after{
   content: "";
   display: block;
   width: 100%;
