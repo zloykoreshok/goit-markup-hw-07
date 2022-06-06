@@ -1,0 +1,215 @@
+.hero-section__btn{
+    font-family: 'Roboto', 'Sans-Serif';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  
+    width: 200px;
+    height: 50px;
+  
+    border: none;
+    border-radius: 4px;
+   
+    text-align: center; 
+    align-items: center;
+    display: inline-block;
+  
+    transition-property: inherit;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+
+
+  .modal-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: none;
+    cursor: pointer;
+    outline: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: var(--background-color);
+    
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+
+  .modal-btn-icon{
+    position: relative;
+    fill: #000000;
+  }
+  
+  .modal-btn:hover,
+  .modal-btn:focus{
+    border: 1px solid var(--accent-color);
+  }
+  
+  .modal-btn:hover  .modal-btn-icon,
+  .modal-btn:focus .modal-btn-icon{
+    fill: var(--accent-color);
+  }
+
+  .custom-checkbox{
+    position: absolute;
+    content: '';
+    top: 2px;
+    left:10px;
+  
+    width: 16px;
+    height: 15px;
+  
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 2px;
+    outline: 2px solid var(--title-text-color);
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .custom-checkbox-icon{
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .checkbox:checked + .custom-checkbox .custom-checkbox-icon{
+    opacity: 1;
+  }
+  
+  .checkbox:checked + .custom-checkbox {
+    background-color: #2196F3;
+    fill:#FFFFFF;
+  }
+  
+  .checkbox:focus + .custom-checkbox,
+  .checkbox:hover + .custom-checkbox{
+    border: 1px solid var(--accent-color);
+    outline: 2px solid var(--accent-color);
+  }
+  
+  .submit-btn{    
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    
+    width: 200px;
+    height: 50px;
+  
+    margin: auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--background-color);
+    background-color:var(--accent-color);
+  
+    transition-property: inherit;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+
+  .footer__btn{
+    font-family: 'Roboto', 'Sans-Serif';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 0;
+    border-radius: 4px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 11px 29px;
+    cursor: pointer;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+  
+    transition-property: inherit;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+    color: var(--background-color);
+    background-color: var(--accent-color);
+  }
+  
+  .icon-send{
+    fill: #FFFFFF;
+    margin-left: 10px;
+  }
+
+
+
+  .portfolio__btn{
+    font-family: 'Roboto', 'Sans-Serif';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 0;
+    border-radius: 4px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    cursor: pointer;
+  
+    padding: 6px 22px 6px 22px;
+  
+    transition-property: color, background-color, box-shadow;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  
+    color: var(--title-text-color);
+    background-color: var(--team-n-buttons-color);
+  }
+  
+  .portfolio__sum-btn{
+    font-family: 'Roboto', 'Sans-Serif';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 0;
+    border-radius: 4px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 6px 22px 6px 22px;
+    cursor: pointer;
+    
+    color: var(--background-color);
+    background-color: var(--accent-color);
+  }
+  
+  .portfolio__sum-btn:hover,
+  .portfolio__sum-btn:focus,
+  .portfolio__btn:hover,
+  .portfolio__btn:focus{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: var(--accent-color);
+    color: var(--background-color);
+  } 
+  
