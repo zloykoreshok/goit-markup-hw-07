@@ -1496,4 +1496,51 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: var(--accent-color);
   color: var(--background-color);
 }
+
+.customers__item {
+  margin-right: 30px;
+}
+
+.customers__item:last-child {
+  margin-right: 0;
+}
+
+.customers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.customers__link {
+  width: 170px;
+  height: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: transparent;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: var(--icon-color);
+  -webkit-transition-property: fill, border-color;
+  transition-property: fill, border-color;
+  -webkit-transition-duration: var(--transition-duration);
+          transition-duration: var(--transition-duration);
+  -webkit-transition-timing-function: var(--transition-timing-function);
+          transition-timing-function: var(--transition-timing-function);
+}
+
+.customers__link:hover,
+.customers__link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
 /*# sourceMappingURL=main.css.map */
