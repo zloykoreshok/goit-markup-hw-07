@@ -1,0 +1,39 @@
+.customers__item{
+    margin-right: 30px;
+  }
+  
+  .customers__item:last-child{
+    margin-right: 0;
+  }
+  
+  .customers__list{
+    display: flex;
+  }
+  
+  .customers__link{
+     width: 170px;
+     height: 92px;
+  
+     display: flex;
+     justify-content:center;
+     align-items: center;
+    
+     outline: transparent;
+     border: 1px solid var(--icon-color);
+     border-radius: 4px;
+  
+     background-size:  contain;
+     background-repeat: no-repeat;
+     background-position: center; 
+     fill: var(--icon-color);
+  
+     transition-property: fill, border-color;
+     transition-duration: var(--transition-duration);
+     transition-timing-function: var(--transition-timing-function); 
+  }
+  
+  .customers__link:hover,
+  .customers__link:focus{
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
