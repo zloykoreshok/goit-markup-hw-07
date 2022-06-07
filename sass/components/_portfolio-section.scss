@@ -31,48 +31,5 @@
     margin-right: 0;
   }
 
-  .portfolio__btn{
-    font-family: 'Roboto', 'Sans-Serif';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    border: 0;
-    border-radius: 4px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    cursor: pointer;
+
   
-    padding: 6px 22px 6px 22px;
-  
-    transition-property: color, background-color, box-shadow;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
-  
-    color: var(--title-text-color);
-    background-color: var(--team-n-buttons-color);
-  }
-  
-  .portfolio__sum-btn{
-    font-family: 'Roboto', 'Sans-Serif';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    border: 0;
-    border-radius: 4px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    padding: 6px 22px 6px 22px;
-    cursor: pointer;
-    
-    color: var(--background-color);
-    background-color: var(--accent-color);
-  }
-  
-  .portfolio__sum-btn:hover,
-  .portfolio__sum-btn:focus,
-  .portfolio__btn:hover,
-  .portfolio__btn:focus{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background-color: var(--accent-color);
-    color: var(--background-color);
-  } 

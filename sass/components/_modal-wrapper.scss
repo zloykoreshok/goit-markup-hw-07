@@ -68,6 +68,12 @@
     transition-property: border-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
+
+    &:hover,
+    &:focus{
+      border: 1px solid var(--accent-color);
+    }
+
   }
   
   .modal-wrapper__icon{
@@ -108,10 +114,7 @@
     transition-timing-function: var(--transition-timing-function);
   }
   
-  .modal-wrapper__input:hover,
-  .modal-wrapper__input:focus{
-    border: 1px solid var(--accent-color);
-  }
+
   
   .modal-wrapper__input:hover ~ .modal-wrapper__icon,
   .modal-wrapper__input:focus ~ .modal-wrapper__icon{
@@ -123,46 +126,8 @@
     border: 1px solid var(--accent-color);
   }
   
-  .modal-btn{
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    
-    width: 30px;
-    height: 30px;
-    padding: 0;
   
-    display: flex;
-    align-items: center;
-    justify-content: center;
   
-    border: none;
-    cursor: pointer;
-    outline: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    background-color: var(--background-color);
-    
-    transition-property: color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
-  }
-
-  .modal-btn-icon{
-    position: relative;
-    fill: #000000;
-  }
-  
-  .modal-btn:hover,
-  .modal-btn:focus{
-    border: 1px solid var(--accent-color);
-  }
-  
-  .modal-btn:hover  .modal-btn-icon,
-  .modal-btn:focus .modal-btn-icon{
-    fill: var(--accent-color);
-  }
-
   .modal-wrapper__agreement{  
     position: relative;
     margin-bottom: 30px;
@@ -177,15 +142,22 @@
   .checkbox{
   position: absolute;
   margin-left: 12px;
+
+  &:checked + .custom-checkbox .custom-checkbox-icon{
+    opacity: 1;
   }
-  
-  .visually-hidden {
-    position: fixed;
-    transform: scale(0);
+  &:checked + .custom-checkbox {
+    background-color: #2196F3;
+    fill:#FFFFFF;
   }
-  
-  
-  
+
+  &:focus + .custom-checkbox,
+  &:hover + .custom-checkbox{
+    border: 1px solid var(--accent-color);
+    outline: 2px solid var(--accent-color);
+  }
+  }
+      
   .agreement-form-group{
     font-weight: 400;
     font-size: 14px;
@@ -228,49 +200,3 @@
     opacity: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .checkbox:checked + .custom-checkbox .custom-checkbox-icon{
-    opacity: 1;
-  }
-  
-  .checkbox:checked + .custom-checkbox {
-    background-color: #2196F3;
-    fill:#FFFFFF;
-  }
-  
-  .checkbox:focus + .custom-checkbox,
-  .checkbox:hover + .custom-checkbox{
-    border: 1px solid var(--accent-color);
-    outline: 2px solid var(--accent-color);
-  }
-  
-  .submit-btn{    
-    
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-    
-    width: 200px;
-    height: 50px;
-  
-    margin: auto;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    color: var(--background-color);
-    background-color:var(--accent-color);
-  
-    transition-property: inherit;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
-  }
-

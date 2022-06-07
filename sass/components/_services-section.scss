@@ -11,11 +11,13 @@
     position: relative;
     display: block;
     margin-right: 30px;
+
+    &:last-child{
+      margin: 0;
+    }
   }
   
-  .services__item:last-child{
-    margin: 0;
-  }
+
   
   .services__image{
     display: block;

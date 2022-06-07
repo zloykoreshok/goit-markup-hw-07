@@ -6,11 +6,13 @@
   .features__item{
     margin-right: 30px;
     width: 270px; 
+
+    &:last-child{
+      margin-right: 0;
+    }
   }
   
-  .features__item:last-child{
-    margin-right: 0;
-  }
+
   
   .features__container{
     display: flex;
@@ -45,8 +47,9 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.04em;
+
+    &:last-child{
+      margin-right: 0;
+    }
   }
   
-  .features__paragraph:last-child{
-    margin-right: 0;
-  }

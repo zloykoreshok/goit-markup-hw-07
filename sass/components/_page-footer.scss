@@ -61,14 +61,13 @@
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);  
     color:var(--footer-links-color); 
+
+    &:hover, 
+    &:focus{
+      color: var(--accent-color);
+    }
   }
   
-  .nav__link:hover,
-  .nav__link:focus,
-  .footer__link:hover, 
-  .footer__link:focus{
-    color: var(--accent-color);
-  }
 
   .footer-invite-container{
     margin: 0;
@@ -111,13 +110,15 @@
     transition-property: inherit;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
-  }
-  
-  .footer-socials__link:hover,
-  .footer-socials__link:focus{
+
+
+    &:hover,
+    &:focus{
     background-color: var(--accent-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
+  }
+    
   
   .footer-socials__icon{
    fill: var(--background-color);
