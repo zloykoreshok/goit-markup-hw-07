@@ -38,7 +38,7 @@
   }
   
   .footer-socials__icon{
-   fill: var(--background-color);
+   fill: $background-color;
   }
 
 // Team-section socials
@@ -62,7 +62,7 @@
     justify-content: center;
     width: 44px;
     height: 44px;
-    background-color: var(--background-color);
+    background-color: $background-color;
     border-radius:50%;
     
     transition-property: inherit;
@@ -74,13 +74,14 @@
     &:focus{
       background-color: var(--accent-color);
     }
+
+    &:hover .team__socials-icon,
+    &:focus .team__socials-icon{
+      fill: $background-color;
+    }
   }
     
   .team__socials-icon{
     fill: var(--icon-color);
   }
   
-  .team__socials-link:hover .team__socials-icon,
-  .team__socials-link:focus .team__socials-icon{
-    fill: var(--background-color);
-  }

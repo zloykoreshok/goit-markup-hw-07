@@ -21,7 +21,7 @@
     border-radius: 4px;
     
     box-shadow: var(--box-shadow);
-    color: var(--background-color);
+    color: $background-color;
     background-color:var(--accent-color);
   
     transition-property: inherit;
@@ -49,7 +49,7 @@
     outline: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    background-color: var(--background-color);
+    background-color: $background-color;
     
     transition-property: color;
     transition-duration: var(--transition-duration);
@@ -96,7 +96,7 @@
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
   
-    color: var(--background-color);
+    color: $background-color;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
@@ -116,18 +116,18 @@
   
     padding: 6px 22px 6px 22px;
   
-    transition-property: color, background-color, box-shadow;
+    transition-property: color, $background-color, box-shadow;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
   
-    color: var(--title-text-color);
+    color: $title-text-color;
     background-color: var(--team-n-buttons-color);
 
     &:hover,
     &:focus{
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       background-color: var(--accent-color);
-      color: var(--background-color);
+      color: $background-color;
     } 
   }
   
@@ -143,14 +143,14 @@
     padding: 6px 22px 6px 22px;
     cursor: pointer;
     
-    color: var(--background-color);
+    color: $background-color;
     background-color: var(--accent-color);
 
     &:hover,
     &:focus{
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       background-color: var(--accent-color);
-      color: var(--background-color);
+      color: $background-color;
     } 
   }
 
@@ -175,7 +175,7 @@
     transition-property: inherit;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
-    color: var(--background-color);
+    color: $background-color;
     background-color: var(--accent-color);
   }
   

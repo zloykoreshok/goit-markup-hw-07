@@ -27,7 +27,7 @@
   }
   
   .footer__logo-color{
-    color: var(--background-color);
+    color: $background-color;
   }
   
   .footer__list{
@@ -45,7 +45,7 @@
     font-style: normal;
     line-height: 24px;
   
-    color: var(--background-color);
+    color: $background-color;
   }
   
   .footer__adress-item{
@@ -79,7 +79,7 @@
     line-height: 16px;
     
     margin-bottom: 20px;
-    color: var(--background-color);
+    color: $background-color;
   }
   
  

@@ -1,8 +1,12 @@
 :root{
-  --primary-text-color: #757575;
-  --background-color: #FFFFFF;
-  --header-logo-color: #000000;
-  --title-text-color: #212121;
+  $primary-text-color:#757575;
+  $background-color:#FFFFFF;
+  $title-text-color:#212121;
+
+
+  // --primary-text-color:#757575;
+  // --background-color:#FFFFFF;
+  // --title-text-color: #212121;
   --hero-footer-background-color: #2F303A;
   --accent-color: #2196F3;
   --team-n-buttons-color: #F5F4FA;
@@ -16,4 +20,8 @@
 
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+
 }
