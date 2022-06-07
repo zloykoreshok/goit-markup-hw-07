@@ -20,13 +20,13 @@
     border: none;
     border-radius: 4px;
     
-    box-shadow: var(--box-shadow);
+    box-shadow: $box-shadow;
     color: $background-color;
-    background-color:var(--accent-color);
+    background-color: $accent-color;
   
     transition-property: inherit;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
   }
 
 // Modal-wrapper close button
@@ -52,12 +52,12 @@
     background-color: $background-color;
     
     transition-property: color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
 
     &:hover,
     &:focus{
-      border: 1px solid var(--accent-color);
+      border: 1px solid $accent-color;
     
     }
   }
@@ -68,7 +68,7 @@
 
     .modal-btn:hover &,
     .modal-btn:focus &{
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 
@@ -93,12 +93,12 @@
     display: inline-block;
   
     transition-property: inherit;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
   
     color: $background-color;
-    background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: $accent-color;
+    box-shadow: $box-shadow;
   }
 
 //   Portfolio-section buttons
@@ -116,17 +116,17 @@
   
     padding: 6px 22px 6px 22px;
   
-    transition-property: color, $background-color, box-shadow;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    transition-property: color, $background-color, $box-shadow;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
   
     color: $title-text-color;
-    background-color: var(--team-n-buttons-color);
+    background-color: $team-n-buttons-color;
 
     &:hover,
     &:focus{
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-      background-color: var(--accent-color);
+      background-color: $accent-color;
       color: $background-color;
     } 
   }
@@ -144,12 +144,12 @@
     cursor: pointer;
     
     color: $background-color;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 
     &:hover,
     &:focus{
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-      background-color: var(--accent-color);
+      background-color: $accent-color;
       color: $background-color;
     } 
   }
@@ -173,10 +173,10 @@
     align-items: center;
   
     transition-property: inherit;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
     color: $background-color;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
   
   .icon-send{

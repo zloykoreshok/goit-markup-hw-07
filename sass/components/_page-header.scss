@@ -1,5 +1,5 @@
 .header{
-    border-bottom: var(--border-color) solid 1px;
+    border-bottom: $border-color solid 1px;
   }
   
   .header-container{
@@ -22,7 +22,7 @@
     width: 145px;
   
     display: block;
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   .header-logo__color{
@@ -51,14 +51,14 @@
     align-items: center;
     
     transition-property: color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
   
     color: $primary-text-color; 
 
     &:hover,
     &:focus{
-      color:var(--accent-color);
+      color: $accent-color;
     }
   }
   
@@ -66,14 +66,14 @@
     margin-right: 10px; 
   
     transition-property: color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
   
     fill: currentColor;
 
     &:hover,
     &:focus{
-  fill: var(--accent-color);
+  fill: $accent-color;
   }
   }
   

@@ -64,12 +64,12 @@
     border-radius: 4px; 
     
     transition-property: border-color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
 
     &:hover,
     &:focus{
-      border: 1px solid var(--accent-color);
+      border: 1px solid $accent-color;
     }
   }
   
@@ -79,8 +79,8 @@
     left: 12px;
     transform: translateY(-50%);
     transition-property: fill;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
   
     fill: $title-text-color;
   }
@@ -107,18 +107,18 @@
     border-radius: 4px;
   
     transition-property: color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
   }
   
   .modal-wrapper__input:hover ~ .modal-wrapper__icon,
   .modal-wrapper__input:focus ~ .modal-wrapper__icon{
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   
   .modal-wrapper__textarea:hover,
   .modal-wrapper__textarea:focus{
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
   } 
   
   .modal-wrapper__agreement{  
@@ -140,14 +140,14 @@
     opacity: 1;
   }
   &:checked + .custom-checkbox {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     fill: $background-color;
   }
 
   &:focus + .custom-checkbox,
   &:hover + .custom-checkbox{
-    border: 1px solid var(--accent-color);
-    outline: 2px solid var(--accent-color);
+    border: 1px solid $accent-color;
+    outline: 2px solid $accent-color;
   }
   }
       
@@ -163,7 +163,7 @@
   
   
   .agreement-phrase{
-    color: var(--accent-color); 
+    color: $accent-color; 
     text-decoration-line: underline;
   }
 

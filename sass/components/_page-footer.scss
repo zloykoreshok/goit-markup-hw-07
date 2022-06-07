@@ -2,7 +2,7 @@
     padding-top:60px;
     padding-bottom: 60px;
    
-    background-color: var(--hero-footer-background-color);
+    background-color: $hero-footer-background-color;
   }
   
   .footer__info-container{
@@ -23,7 +23,7 @@
     margin-bottom: 20px;
     display: block;
     
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   .footer__logo-color{
@@ -58,13 +58,13 @@
     letter-spacing: 0.03em;
   
     transition-property: inherit;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);  
-    color:var(--footer-links-color); 
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;  
+    color: $footer-links-color; 
 
     &:hover, 
     &:focus{
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
   

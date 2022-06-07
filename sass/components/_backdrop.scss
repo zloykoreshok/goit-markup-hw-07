@@ -4,12 +4,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--backdrop-background);
+    background-color: $backdrop-background;
     z-index: 1;
   
     transition-property: inherit;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
   }
 
   .backdrop.is-hidden{
