@@ -72,6 +72,35 @@
     }
   }
 
+// Hero-section button
+
+.hero-section__btn{
+    font-family: 'Roboto', 'Sans-Serif';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  
+    width: 200px;
+    height: 50px;
+  
+    border: none;
+    border-radius: 4px;
+   
+    text-align: center; 
+    align-items: center;
+    display: inline-block;
+  
+    transition-property: inherit;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
 //   Portfolio-section buttons
 
   .portfolio__btn{
@@ -123,4 +152,34 @@
       background-color: var(--accent-color);
       color: var(--background-color);
     } 
+  }
+
+
+//   Footer send-button
+
+.footer__btn{
+    font-family: 'Roboto', 'Sans-Serif';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 0;
+    border-radius: 4px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 11px 29px;
+    cursor: pointer;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+  
+    transition-property: inherit;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+    color: var(--background-color);
+    background-color: var(--accent-color);
+  }
+  
+  .icon-send{
+    fill: #FFFFFF;
+    margin-left: 10px;
   }

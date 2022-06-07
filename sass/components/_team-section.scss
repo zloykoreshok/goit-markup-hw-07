@@ -47,46 +47,4 @@
     text-align: center;
   }
   
-  .team__socials-list{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 0; 
-  }
   
-  .team__socials-item:not(:last-child){
-    margin-right: 10px;
-  }
-  
-  .team__socials-link{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    background-color: var(--background-color);
-    border-radius:50%;
-    
-    transition-property: inherit;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
-
-
-    &:hover,
-    &:focus{
-      background-color: var(--accent-color);
-    }
-  }
-  
-
-  
-  .team__socials-icon{
-    fill: var(--icon-color);
-  }
-  
-  .team__socials-link:hover .team__socials-icon,
-  .team__socials-link:focus .team__socials-icon{
-    fill: var(--background-color);
-  }

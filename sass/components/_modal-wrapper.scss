@@ -1,6 +1,4 @@
-
-  
-  .modal-wrapper{ 
+.modal-wrapper{ 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -73,7 +71,6 @@
     &:focus{
       border: 1px solid var(--accent-color);
     }
-
   }
   
   .modal-wrapper__icon{
@@ -114,8 +111,6 @@
     transition-timing-function: var(--transition-timing-function);
   }
   
-
-  
   .modal-wrapper__input:hover ~ .modal-wrapper__icon,
   .modal-wrapper__input:focus ~ .modal-wrapper__icon{
     fill: var(--accent-color);
@@ -124,9 +119,7 @@
   .modal-wrapper__textarea:hover,
   .modal-wrapper__textarea:focus{
     border: 1px solid var(--accent-color);
-  }
-  
-  
+  } 
   
   .modal-wrapper__agreement{  
     position: relative;
