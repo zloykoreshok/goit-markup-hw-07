@@ -27,6 +27,12 @@
     transition-timing-function: var(--transition-timing-function);
   
     color: var(--title-text-color);
+
+    &:hover,
+    &:focus{
+      color: var(--accent-color);
+    }
+
   }
   
   .nav__link--active{

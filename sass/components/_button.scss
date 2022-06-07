@@ -50,19 +50,20 @@
     transition-property: color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
+
+    &:hover,
+    &:focus{
+    border: 1px solid var(--accent-color);
+  }
   }
 
   .modal-btn-icon{
     position: relative;
     fill: #000000;
   }
+    
   
-  .modal-btn:hover,
-  .modal-btn:focus{
-    border: 1px solid var(--accent-color);
-  }
-  
-  .modal-btn:hover  .modal-btn-icon,
+  .modal-btn:hover .modal-btn-icon,
   .modal-btn:focus .modal-btn-icon{
     fill: var(--accent-color);
   }

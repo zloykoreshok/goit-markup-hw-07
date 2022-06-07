@@ -72,12 +72,14 @@
     transition-property: inherit;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
+
+    &:hover,
+    &:focus{
+      background-color: var(--accent-color);
+    }
   }
   
-  .team__socials-link:hover,
-  .team__socials-link:focus{
-    background-color: var(--accent-color);
-  }
+
   
   .team__socials-icon{
     fill: var(--icon-color);
