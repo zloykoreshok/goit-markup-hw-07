@@ -275,6 +275,8 @@ summary {
   --footer-links-color:rgba(255, 255, 255, 0.6);
   --icon-color:#AFB1B8;
   --footer-socials-color:rgba(255, 255, 255, 0.1);
+  --backdrop-background: rgba(0, 0, 0, 0.2);
+  --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -635,7 +637,7 @@ h1, h2, h3, h4, h5, h6, p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--backdrop-background);
   z-index: 1;
   -webkit-transition-property: inherit;
   transition-property: inherit;
@@ -1321,8 +1323,8 @@ h1, h2, h3, h4, h5, h6, p {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
   color: var(--background-color);
   background-color: var(--accent-color);
   -webkit-transition-property: inherit;
